@@ -1,0 +1,98 @@
+@charset 'UTF-8';
+
+*{margin:0;padding:0;}
+body,html{width: 100%;}
+
+/*pc头部导航开始*/
+#app{background: #000;width:100%;}
+header{position:absolute;top:0;left:50%;z-index:99;width:55rem;margin-left:-27.5rem;background:rgba(0,0,0,0.5);color:#fff;}
+header .header-img{width:6rem;height:6rem;background:red;}
+header .header-img .mu-button{width:100% !important;height:100% !important;}
+header .header-img .mu-button div{padding:0;}
+header .header-img .mu-button img{width:100%;height:100%;}
+
+header .header-nav{width:75%;height:6rem;}
+header .header-nav .mu-tabs{width:100%;height:100%;margin-left:3rem;}
+header .header-nav .mu-tab{width:22%;height:100%;display:block;}
+header .header-nav .mu-tab .nav-title{width:100%;margin-top:1rem;}
+header .header-nav .mu-tab .nav-title div{}	
+header .header-nav .mu-tab .nav-title div img{width:2.2rem;} 
+header .header-nav .mu-tab .nav-title p{text-align: center;font-size:0.7rem;}
+
+header .header-search{width:6rem;height:6rem;background: #292121;}
+header .header-search .mu-button{width:100% !important;height:100% !important; padding:0;text-align: center;line-height: 100%;}
+header .header-search .mu-button div{padding:0;}
+header .header-search .mu-button  img{width:1rem;}
+/*pc头部导航结束*/
+
+
+
+/*pc底部开始*/
+footer{width:55rem;margin:4rem auto 0;color:#fff;}
+footer .footer-contain{display: flex;justify-content:space-between;width:100%;}
+
+footer .footer-contain .mu-tabs{width:80%;}
+footer .footer-contain .mu-tab{width:22%;height:100%;display:block;}
+footer .footer-contain .mu-tab .nav-title{width:100%;margin-top:1rem;}
+footer .footer-contain .mu-tab .nav-title div{}	
+footer .footer-contain .mu-tab .nav-title div img{width:2.2rem;} 
+footer .footer-contain .mu-tab .nav-title p{text-align: center;font-size:0.7rem;}
+
+/*footer .footer-contain > ul {width:80%;display: flex;justify-content:space-between; }
+footer .footer-contain > ul li{font-size:0.7rem;color:#fff;}
+footer .footer-contain > ul li > ul{width:100%;margin-top:0.05rem;text-align:center;}
+footer .footer-contain > ul li > ul > li{margin-top:0.25rem;}*/
+
+footer .footer-contain .footer-img{width:10%;font-size: 0.7rem;}
+footer .footer-contain .footer-img img{background: #fff;width:90%;margin-bottom:0.03rem;padding:0.025rem;}
+footer .footer-copy{width:100%;margin-top:0.2rem;padding:0.2rem 0 5rem 0;font-size:0.65rem;text-align: center;}
+footer .f-router{color:#fff;}
+/*pc底部结束*/
+
+
+
+/*移动端头部开始*/
+.mobile-nav{background: #fff !important;position:fixed !important;top:0;z-index:99;}
+.mobile-nav .is-right{color:#666;}
+.mobile-nav img{width:2.5rem;}
+.more{transition:0.5s;}
+
+
+.mobile-sibe{widows:20%;height:80rem;position:fixed;top:0;right:0;z-index:99;transition: 0.5s;}
+.mobile-sibe .el-menu-vertical-demo{width:100%;height:100%;}
+.mobile-sibe .el-menu-vertical-demo .el-menu-item{width:100%;margin-top:3rem;background: transparent !important;}
+.mobile-sibe .el-menu-vertical-demo .el-menu-item span{font-size:1.5rem;}
+
+
+.sidebar{position:fixed;right:0;top:0;z-index:99;width:25%;height:100%;background: rgba(0,0,0,0.6);transition: 0.5s;}
+.sidebar > ul{width:100%;margin-top:5rem;}
+.sidebar > ul > li{margin-bottom:2.5rem;font-size:1.4rem;text-align: center;color:#fff;}
+.sidebar > ul > li > a{color:#fff;}
+.sidebar > ul > li > a.red{color:red;}
+/*移动端头部结束*/
+
+
+/*移动端底部开始*/
+footer .mobile .footer-copy{width:100%;	background: #fff;padding-bottom: 5rem; font-size:1.1rem;color:#666;}
+/*移动端底部结束*/
+
+
+/*PC端操作*/
+.pc{display:block;}
+.mobile{display:none;}
+
+
+/*移动端的响应式*/
+@media screen and (max-width:750px) {
+	.pc{display:none;}
+	.mobile{display:block;}
+	
+	
+	#app{background: #eee;}
+	
+	header{position:fixed;top:0;left:0;margin:0;width:100%;}
+	footer{width:100%;}
+}
+
+
+
